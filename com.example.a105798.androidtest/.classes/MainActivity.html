@@ -1,0 +1,163 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: MainActivity</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">com.example.a105798.androidtest</a> ]
+</div>
+
+<h1>Coverage Summary for Class: MainActivity (com.example.a105798.androidtest)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">MainActivity</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 7)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">MainActivity$1</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 6)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 13)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package com.example.a105798.androidtest;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import android.app.Activity;
+<i>4</i>&nbsp;import android.content.Intent;
+<i>5</i>&nbsp;import android.support.v7.app.AppCompatActivity;
+<i>6</i>&nbsp;import android.os.Bundle;
+<i>7</i>&nbsp;import android.view.View;
+<i>8</i>&nbsp;import android.widget.Toast;
+<i>9</i>&nbsp;import android.widget.EditText;
+<i>10</i>&nbsp;import android.widget.Button;
+<i>11</i>&nbsp;import android.widget.TextView;
+<b class="nc"><i>12</i>&nbsp;public class MainActivity extends Activity {</b>
+<i>13</i>&nbsp;    Button b1;
+<i>14</i>&nbsp;    EditText ed1,ed2;
+<i>15</i>&nbsp;    TextView tx1;
+<i>16</i>&nbsp;    //public class MainActivity extends Activity implements View.OnClickListener {
+<i>17</i>&nbsp;    @Override
+<i>18</i>&nbsp;    protected void onCreate(Bundle savedInstanceState) {
+<b class="nc"><i>19</i>&nbsp;        super.onCreate(savedInstanceState);</b>
+<b class="nc"><i>20</i>&nbsp;        setContentView(R.layout.activity_main);</b>
+<i>21</i>&nbsp;
+<b class="nc"><i>22</i>&nbsp;        b1 = (Button)findViewById(R.id.button);</b>
+<b class="nc"><i>23</i>&nbsp;        ed1 = (EditText)findViewById(R.id.editText);</b>
+<b class="nc"><i>24</i>&nbsp;        ed2 = (EditText)findViewById(R.id.editText2);</b>
+<i>25</i>&nbsp;
+<i>26</i>&nbsp;        //Intent i = new Intent(this, HomePage.class);
+<i>27</i>&nbsp;       // startActivity(i);
+<i>28</i>&nbsp;       // Button mClickButton1 = (Button)findViewById(R.id.button);
+<i>29</i>&nbsp;       // mClickButton1.setOnClickListener(MainActivity.this);
+<i>30</i>&nbsp;
+<i>31</i>&nbsp;
+<i>32</i>&nbsp;
+<b class="nc"><i>33</i>&nbsp;        b1.setOnClickListener(new View.OnClickListener() {</b>
+<i>34</i>&nbsp;            @Override
+<i>35</i>&nbsp;            public void onClick(View v) {
+<b class="nc"><i>36</i>&nbsp;                if(ed1.getText().toString().equals(&quot;admin&quot;) &amp;&amp;</b>
+<b class="nc"><i>37</i>&nbsp;                        ed2.getText().toString().equals(&quot;admin&quot;)) {</b>
+<b class="nc"><i>38</i>&nbsp;                    Toast.makeText(getApplicationContext(),</b>
+<b class="nc"><i>39</i>&nbsp;                            &quot;Redirecting...&quot;,Toast.LENGTH_SHORT).show();</b>
+<b class="nc"><i>40</i>&nbsp;                    startActivity(new Intent(MainActivity.this,WelcomePage.class));</b>
+<i>41</i>&nbsp;
+<i>42</i>&nbsp;                }
+<i>43</i>&nbsp;                }
+<i>44</i>&nbsp;
+<i>45</i>&nbsp;        });
+<i>46</i>&nbsp;
+<i>47</i>&nbsp;
+<i>48</i>&nbsp;    }
+<i>49</i>&nbsp;
+<i>50</i>&nbsp;    //public static void mainMethod()
+<i>51</i>&nbsp;   // {
+<i>52</i>&nbsp;     //   startActivity(new Intent(MainActivity.this,WelcomePage.class));
+<i>53</i>&nbsp;   // }
+<i>54</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2017-08-07 16:10</div>
+</div>
+</body>
+</html>
